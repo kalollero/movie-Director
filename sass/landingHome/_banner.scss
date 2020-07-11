@@ -1,0 +1,25 @@
+.banner {
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+	background-blend-mode: multiply; 
+	color: var(--blanco);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: var(--gris);
+	background-image: url(../img/hdbg.webp);
+		@include sm {
+			min-height: 100vh;
+		}
+
+		@include md {
+			
+		}
+
+		@include lg {
+			min-height: 80vh;
+			
+		}
+}

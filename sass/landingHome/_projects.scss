@@ -1,0 +1,358 @@
+.projects {
+	
+	
+	@include sm {
+		background-color: var(--blueChris);
+		padding: 5rem 0;}
+	@include md {padding: 0;}
+
+	@include lg {
+		background-color: var(--blanco);
+	}
+
+	& h6.title__section {
+		@include sm {
+			color: var(--ceniza);
+		}
+
+		@include md {display: none;}
+	}
+
+	&__module {
+		display: flex;
+		flex-flow: column;
+		justify-content: center;
+		align-items: flex-start;
+		background-blend-mode: multiply; 
+		color: var(--blanco);
+		background-size: cover;
+    	background-position: center;
+    	background-repeat: no-repeat;
+    	background-color: var(--gris);
+    	transition: background-color 300ms ease 0ms,
+    				background-color 300ms ease 0ms,
+    				background-color 300ms ease 0ms;
+  	
+		@include sm {
+			width: 100%;
+			min-height: 40%;
+			margin: 1rem;
+			padding: 5rem 2rem;
+		}
+
+		@include md {		
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			padding: 5rem 40% 5rem 2rem;
+		}
+
+		@include lg {}
+	}
+
+	&__module:hover {
+		background-color: var(--oxford);
+	}
+
+	&__subtitle {
+		font-size: 12px;
+		margin: .25rem 0;
+	}
+
+	&__title {}
+
+	&__time {
+		font-size: 12px;
+		font-weight: 500;
+		color: var(--ceniza);
+		margin-bottom: 0.5rem;
+	}
+
+
+	&__more {
+		display: flex;
+		flex-flow: row;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+
+		@include sm {
+			margin-top: .5rem;
+		}
+
+		@include md {
+			display: flex;
+			flex-flow: row;
+			justify-content: center;
+			align-items: center;
+		}
+
+		& p {
+			font-size: 12px;
+			text-transform: uppercase;
+		}
+
+		& svg {
+			width: 12px;
+			height: 12px;
+			margin: 0;
+			padding: 0;
+			fill: var(--blanco);
+		}
+	}
+
+	&__more:hover {
+		color: var(--blueChris);
+		text-decoration: var(--blueChris) dotted underline;
+	}
+
+	
+
+	&__more:hover svg {
+		color: var(--blue6);
+		text-decoration: var(--blueChris) dotted underline;
+		fill: var(--blueChris);
+	}
+}
+
+
+.projects {
+	@include sm {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		align-items: center;
+		align-content: space-around;
+	}
+
+	@include md {	
+		display: grid;
+		grid-template-columns: repeat(6, 1fr);
+		grid-template-rows: repeat(9, auto);
+		grid-gap: 1px;
+	}
+	
+	@include lg {}
+		
+	& .project--1 {
+		background-image: url("../img/smg-2.webp");
+		@include sm {}
+		@include md {
+			grid-column:1/5;
+			grid-row: 1/2;
+		}
+		@include lg {
+			grid-column:1/5;
+			grid-row: 1/2;
+		}
+	}
+
+	& .project--2 {
+		background-image: url("../img/sf.webp");
+		@include sm {}
+		@include md {
+			grid-column: 5/7;
+			grid-row: 1/2;
+		}
+		@include lg {
+			grid-column: 5/7;
+			grid-row: 1/2;
+		}
+	}
+
+	& .project--3 { 
+		background-image: url("../img/willitblend.webp");
+		background-position: top center;
+		@include sm {}
+		@include md {
+			grid-column:1/4;
+			grid-row: 2/3;}
+		@include lg {
+			grid-column:1/4;
+			grid-row: 2/3;
+		}
+	}
+
+	& .project--4 { 
+		background-image: url("../img/rio-1.webp");
+		@include sm {}
+		@include md {
+			grid-column:4/7;
+			grid-row: 2/3;
+		}
+		@include lg {
+			grid-column:4/7;
+			grid-row: 2/3;
+		}
+	}
+
+	& .project--5 { 
+		background-image: url("../img/jesus.webp");
+		@include sm {}
+		@include md {
+			grid-column: 1/3;
+			grid-row: 3/5;
+		}
+		@include lg {
+			grid-column: 1/3;
+			grid-row: 3/5;
+		}
+	}
+
+	& .project--6 { 
+		background-image: url("../img/leno.webp");
+		@include sm {}
+		@include md {
+			grid-column: 3/5;
+			grid-row: 3/4;
+		}
+		@include lg {
+			grid-column: 3/5;
+			grid-row: 3/4;
+		}
+	}
+
+	& .project--7 { 
+		background-image: url("../img/military.webp");
+		@include sm {}
+		@include md {
+			grid-column:5/7;
+			grid-row: 3/4;}
+		@include lg {
+			grid-column:5/7;
+			grid-row: 3/4;
+		}
+	}
+
+	& .project--8 { 
+		background-image: url("../img/imaginedragons.webp");
+		@include sm {}
+		@include md {
+			grid-column: 3/7;
+			grid-row: 4/5;
+		}
+		@include lg {
+			grid-column: 3/7;
+			grid-row: 4/5;
+		}
+	}
+
+	& .project--9 { 
+		background-image: url("../img/timescapes.webp");
+		@include sm {}
+		@include md {
+			grid-column: 1/5;
+			grid-row: 5/6;
+		}
+		@include lg {
+			grid-column: 1/5;
+			grid-row: 5/6;
+		}
+	}
+
+	& .project--10  {
+		background-image: url("../img/mclean.webp");
+		@include sm {}
+		@include md {
+			grid-column: 5/7;
+			grid-row: 5/6;
+		}
+		@include lg {
+			grid-column: 5/7;
+			grid-row: 5/6;
+		}
+	}
+
+	& .project--11 {
+		background-image: url("../img/donnyosmond.webp");
+		@include sm {}
+		@include md {
+			grid-column: 1/3;
+			grid-row: 6/7;
+		}
+		@include lg {
+			grid-column: 1/3;
+			grid-row: 6/7;
+		}
+	}
+
+	& .project--12 {
+		background-image: url("../img/osmonds.webp");
+		@include sm {}
+		@include md {
+			grid-column: 3/5;
+			grid-row: 6/7;
+		}
+		@include lg {
+			grid-column: 3/5;
+			grid-row: 6/7;
+		}
+	}
+
+	& .project--13 {
+		background-image: url("../img/archuleta.webp");
+		@include sm {}
+		@include md {
+			grid-column: 5/7;
+			grid-row:6/8;
+		}
+		@include lg {
+			grid-column: 5/7;
+			grid-row:6/8;
+		}
+	}
+
+	& .project--14 { 
+		background-image: url("../img/donnyandmarie.webp");
+		@include sm {}
+		@include md {
+			grid-column: 1/5;
+			grid-row: 7/8;
+		}
+		@include lg {
+			grid-column: 1/5;
+			grid-row: 7/8;
+		}
+	}
+
+	& .project--15 {
+	background-image: url("../img/stadium.webp");
+		@include sm {}
+		@include md {
+			grid-column: 1/4;
+			grid-row:  8/9;
+		}
+		@include lg {
+			grid-column: 1/4;
+			grid-row:  8/9;
+		}
+	}
+
+	& .project--16 {
+		background-image: url("../img/adobe.webp");
+		background-position: top center;
+		@include sm {}
+		@include md {
+			grid-column: 4/7;
+			grid-row: 8/9;
+		}
+		@include lg {
+			grid-column: 4/7;
+			grid-row: 8/9;
+		}
+	}
+
+	& .project--17 {
+		background-image: url("../img/newspaper.webp");
+		@include sm {}
+		@include md {
+			grid-column: 1/7;
+			grid-row: 9/10;
+		}
+		@include lg {
+			grid-column: 1/7;
+			grid-row: 9/10;
+		}
+	}
+		
+}

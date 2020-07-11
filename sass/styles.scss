@@ -1,0 +1,87 @@
+//Media Queries
+@import "_media_queries.scss";
+
+/* ================================
+		ESTILOS GENERALES
+=================================*/
+	@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+
+	.hidden {
+		position: absolute;
+		overflow: hidden;
+		width: 0;
+		height: 0;
+		pointer-events: none;
+	}
+
+	.sig{fill:#010101;}
+	.motionLoops {fill:#FFFFFF;}
+	.globalArchive {fill:#FFFFFF;}
+
+	.navDots { z-index: 18;}
+	.home,
+	.about,
+	.summary,
+	.experience,
+	.education,
+	.projects,
+	.recomendations,
+	.banner,
+	.footer { z-index: 8; }
+
+	section {
+		width: 100%;
+		height: auto;
+		position: relative;
+		@include sm {
+			padding: 3rem 10%;
+			
+		}
+
+		@include lg {
+			padding: 4rem 5%;
+		}
+	}
+
+	h6.title__section {
+		width: 100%;
+		text-align: center;
+		margin-bottom: 2rem;
+		font-size: 14px;
+
+	}
+
+/* ================================
+		INICIAN MÓDULOS
+=================================*/
+
+/* -------- Nav Dots --------*/
+@import "landingHome/_navDots.scss";
+
+/* -------- Home --------*/
+@import "landingHome/_home.scss";
+
+/* -------- About --------*/
+@import "landingHome/_about.scss";
+
+/* -------- summary --------*/
+@import "landingHome/_summary.scss";
+
+/* -------- experience --------*/
+@import "landingHome/_experience.scss";
+
+/* -------- education --------*/
+@import "landingHome/_education.scss";
+
+/* -------- projects --------*/
+@import "landingHome/_projects.scss";
+
+/* -------- recomendations --------*/
+@import "landingHome/_recomendations.scss";
+
+/* -------- banner --------*/
+@import "landingHome/_banner.scss";
+
+/* -------- footer --------*/
+@import "landingHome/_footer.scss";
+

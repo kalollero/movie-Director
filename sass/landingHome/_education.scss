@@ -1,0 +1,65 @@
+.education {
+	background-color: var(--ahuesado);
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	padding-left: 0;
+	padding-right: 0;
+	
+	@include sm {}
+
+	@include lg {}
+
+	& h6.title__section {}
+
+	&__module {
+		display: flex;
+		flex-flow: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		margin: 1rem;
+		padding: 2rem 1rem;
+		border-radius: .25rem;
+		background-color: var(--blanco);
+		box-shadow: 0 0 1em var(--claro);
+		@include sm {
+			width: 80%;
+			min-height: 50%;
+		}
+
+		@include md {
+			width: 40%;
+			min-height: 60%;
+		}
+
+		@include lg {
+			width: 25%;
+		}
+	}
+
+	&__image {
+		width: 50%;
+		height: auto;
+		display: flex;
+		flex-flow: column;
+		justify-content: center;
+	}
+
+	&__title {
+		padding: 0.5rem 2rem;
+	}
+
+	&__time {
+		padding: 0.5rem 0;
+	}
+
+	&__text {
+
+		& p {
+			font-size: 12px;
+		}
+	}
+}

@@ -1,0 +1,22 @@
+.footer {
+	width: 100%;
+	display: flex;
+	background-color: var(--oxford);
+	color: var(--blanco);
+	font-size: 14px;
+	
+
+	@include sm {
+		flex-flow: column;
+		justify-content: center;
+		align-items: center;
+		padding: 1rem;
+	}
+
+	@include lg {
+		flex-flow: row;
+		justify-content: space-between;
+		align-items: center;
+		padding: 1rem 5%;
+	}
+}

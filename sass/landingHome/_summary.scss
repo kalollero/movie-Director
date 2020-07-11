@@ -1,0 +1,176 @@
+.summary {
+	width: 100%;
+	//height: 150vh;
+	padding: 0;
+	background-color: #fafafa;
+	@include sm {
+		display: flex;
+		flex-flow: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	@include md {
+		
+	}
+
+	@include lg {
+		//height: 100vh;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		//grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-rows: auto auto auto auto auto auto;
+	}
+
+	&__connections {
+		width: 100%;
+		display: flex;
+		flex-flow: column;
+		justify-content: space-around;
+		align-items: center;
+		background-color: var(--blueChris);
+		color: var(--blanco);
+		@include sm {
+			padding: 2rem 0;
+		}
+
+		@include lg {
+			grid-column: 3/4;
+			grid-row: 1/4;
+			padding: 2rem;
+			height: 100%;
+		}
+
+		&--svg {
+			fill: var(--blanco);
+			margin-top: 1rem;
+			@include sm {
+				height: 10%;
+			}
+			@include lg {
+				height: 50%;
+			}
+		}
+
+		& h1 {
+			font-size: 4rem;
+		}
+	}
+
+	&__text {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		
+		@include sm {
+			flex-flow: column;
+			align-items: center;
+			padding: 2rem 10%;
+		}
+
+		@include lg {
+			grid-column: 1/3;
+			grid-row: 1/5;
+			flex-flow: row wrap;
+			align-items: flex-start;
+			padding: 2rem;
+			height: 100%;
+		}
+
+		& p {
+			margin: 1rem 0;
+			@include lg {
+				margin: 1rem 1.25rem;
+				width: 40%;
+			}
+		}
+
+		& h4 {
+			margin: 1rem 0;	
+			text-align: center;		
+			@include lg {
+				width: 80%;
+			}
+		}
+	}
+
+	&__telly {
+		width: 100%;
+		display: flex;
+		flex-flow: column;
+		justify-content: center;
+		align-items: center;
+		background-color: var(--blue1);
+		@include sm {
+			padding: 2rem 0;
+		}
+		@include lg {
+			grid-column: 3/4;
+			grid-row: 4/7;
+			height: 100%;
+		}
+
+		& h4 {
+			background-color: var(--blueChris);
+			color: var(--blanco);
+			text-align: center;
+			margin: 1rem; 
+			padding: 1rem 0;
+			width: 80%;
+		}
+	}
+	
+	&__bachelor {
+		width: 100%;
+		display: flex;
+		flex-flow: column;
+		justify-content: center;
+		align-items: center;
+		background-color: #186134;
+		background-color: var(--blue4);
+		@include sm {
+			padding: 2rem;
+		}
+		@include lg {
+			grid-column: 2/3;
+			grid-row: 5/7;
+			min-height: 100%;
+			padding: 15%;
+		}
+	}
+
+	&__networks {
+		width: 100%;
+		background-color: var(--blue5);
+		flex-flow: row wrap;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+		@include sm {
+			padding: 2rem;
+			display: none;
+		}
+		@include lg {
+			grid-column: 1/2;
+			grid-row: 6/7;
+			min-height: 100%;
+			display: flex;
+		}
+	}
+
+	&__link {}
+
+	&__svg {
+		fill: var(--blanco);
+		@include sm {
+			margin: 1rem 2rem;
+			width: 100%;
+		}
+
+		@include lg {
+			width: 2rem;
+			height: 2rem;
+			margin: .5rem 1.5rem;
+		}
+	}
+}
